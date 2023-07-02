@@ -179,6 +179,7 @@ button.alerts {
 }
 .dashboard-header img {
   color: white;
+  justify-self: end;
 }
 
 .dashboard-header h1 {
@@ -186,14 +187,34 @@ button.alerts {
   font-size: 1.5em;
 }
 
-.dashboard-actions {
+.dashboard-actions, .utilities {
   display: grid;
-  grid-auto-columns: 1fr;
+  grid-auto-rows: minmax(30px, 1fr);
+  gap: 5px;
 }
 
-.dashboard .utilities {
+.dashboard-actions img,.utilities img {
+  width: 25px;
+  height: 25px;
+  justify-self: center;
+  border-radius: 0;
+}
+
+.dashboard-actions .action,
+.utilities .utility {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: white;
   display: grid;
-  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 4fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.utilities {
+  height: 40%;
+  margin-bottom: 70%;
+  align-items: start;
 }
 
 
