@@ -82,10 +82,14 @@ button:active {
 
 input[type="text"] {
   height: 2em;
+  border-color: initial;
   background-color: #eef2ff;
   border: 1px solid #999ea3;
   border-radius: 10px;
   width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1ch;
 }
 
 input[type="text"]:active {
@@ -93,7 +97,12 @@ input[type="text"]:active {
 }
 
 input[type="text"]:hover {
-  border: 2px solid #172554;
+  border: 1px solid #172554;
+}
+
+input[type="text"]:focus-visible {
+  outline-style: none;
+  border: 2px solid goldenrod;
 }
 
 
